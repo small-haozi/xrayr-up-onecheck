@@ -1,0 +1,41 @@
+- name: US
+  uuid: <解锁项目的uuid>
+  domain: us.example.com
+  port: 443
+  streaming_service: Netflix, Hulu
+
+- name: JP
+  uuid: <解锁项目的uuid>
+  domain: jp.example.com
+  port: 443
+  streaming_service: Netflix, Amazon Prime
+
+- name: HK
+  uuid: <解锁项目的uuid>
+  domain: hk.example.com
+  port: 443
+  streaming_service: Disney+
+
+- name: TW
+  uuid: <解锁项目的uuid>
+  domain: tw.example.com
+  port: 443
+  streaming_service: Netflix
+
+- name: KR
+  uuid: <解锁项目的uuid>
+  domain: kr.example.com
+  port: 443
+  streaming_service: Netflix, Disney+
+
+- name: EU
+  uuid: <解锁项目的uuid>
+  domain: eu.example.com
+  port: 443
+  streaming_service: Hulu, Amazon Prime
+
+- name: dns        # 自建节点配置这个  没有可不设置 不影响
+  uuid: <自有解锁项目的uuid>
+  domain: dns.example.com
+  port: 443
+  streaming_service: None
