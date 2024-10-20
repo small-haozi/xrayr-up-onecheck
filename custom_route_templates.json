@@ -1,0 +1,342 @@
+{
+  "Netflix": {
+    "domain": [
+      "netflix.com",
+      "www.netflix.com",
+      "geosite:netflix",
+      "netflix.ca",
+      "netflix.net",
+      "netflixinvestor.com",
+      "netflixtechblog.com",
+      "nflxext.com",
+      "nflximg.com",
+      "nflximg.net",
+      "nflxsearch.net",
+      "nflxso.net",
+      "nflxvideo.net",
+      "netflixdnstest1.com",
+      "netflixdnstest2.com",
+      "netflixdnstest3.com",
+      "netflixdnstest4.com",
+      "netflixdnstest5.com",
+      "netflixdnstest6.com",
+      "netflixdnstest7.com",
+      "netflixdnstest8.com",
+      "netflixdnstest9.com",
+      "netflixdnstest10.com"
+    ]
+  },
+  "Hulu": {
+    "domain": [
+      "hulu.com",
+      "www.hulu.com"
+    ]
+  },
+  "Disney+": {
+    "domain": [
+      "disneyplus.com",
+      "www.disneyplus.com"
+    ]
+  },
+  "Abema": {
+    "domain": [
+      "abema.io",
+      "abema.tv"
+    ]
+  },
+  "FOD": {
+    "domain": [
+      "fod.fujitv.co.jp",
+      "fod-sp.fujitv.co.jp"
+    ]
+  },
+  "KKTV": {
+    "domain": [
+      "kktv.com.tw",
+      "kktv.me"
+    ]
+  },
+  "CatchPlay": {
+    "domain": [
+      "catchplay.com.tw",
+      "catchplay.com"
+    ]
+  },
+  "BBC": {
+    "domain": [
+      "bbc.co.uk",
+      "www.bbc.co.uk"
+    ]
+  },
+  "YouTube": {
+    "domain": [
+      "youtube.com",
+      "googlevideo.com"
+    ]
+  },
+  "HBO Max": {
+    "domain": [
+      "max.com",
+      "hbo.com",
+      "hbomax.com",
+      "hbonow.com",
+      "hbogo.com",
+      "hbomaxcdn.com",
+      "forthethrone.com",
+      "cinemax.com"
+    ]
+  },
+  "ChatGPT": {
+    "domain": [
+      "geosite:openai",
+      "chatgpt.com",
+      "openai.com",
+      "cdn.auth0.com",
+      "azureedge.net",
+      "sentry.io",
+      "azurefd.net",
+      "intercomcdn.com",
+      "intercom.io",
+      "google-analytics.com",
+      "identrust.com",
+      "challenges.cloudflare.com",
+      "api.trongrid.io",
+      "www.bing.com",
+      "bing.com",
+      "sydney.bing.com",
+      "sydney.vcanbb.chat",
+      "bingai.nothingnessvoid.tech",
+      "claude.ai",
+      "www.claude.ai",
+      "gemini.google.com",
+      "proactivebackend-pa.googleapis.com"
+    ]
+  },
+  "TikTok": {
+    "domain": [
+      "tiktok.com",
+      "www.tiktok.com"
+    ]
+  },
+  "AmazonPrimeVideo": {
+    "domain": [
+      "d1v5ir2lpwr8os.cloudfront.net",
+      "d22qjgkvxw22r6.cloudfront.net",
+      "d25xi40x97liuc.cloudfront.net",
+      "d27xxe7juh1us6.cloudfront.net",
+      "dmqdd6hw24ucf.cloudfront.net",
+      "atv-ext-eu.amazon.com",
+      "atv-ext-fe.amazon.com",
+      "atv-ext.amazon.com",
+      "atv-ps-eu.amazon.co.uk",
+      "atv-ps-eu.amazon.com",
+      "atv-ps-fe.amazon.co.jp",
+      "atv-ps-fe.amazon.com",
+      "atv-ps.amazon.com",
+      "aiv-cdn.net",
+      "aiv-delivery.net",
+      "amazonprimevideo.cn",
+      "amazonprimevideo.com.cn",
+      "amazonprimevideos.com",
+      "amazonvideo.cc",
+      "amazonvideo.com",
+      "avodmp4s3ww-a.akamaihd.net",
+      "fls-na.amazon.com",
+      "pv-cdn.net",
+      "video.a2z.com",
+      "media-amazon.com",
+      "prime-video.com",
+      "primevideo.com",
+      "primevideo.org",
+      "primevideo.tv"
+    ]
+  },
+  "Spotify": {
+    "domain": [
+      "spotify.com",
+      "www.spotify.com"
+    ]
+  },
+  "Discovery+": {
+    "domain": [
+      "content-ause1-ur-discovery1.uplynk.com",
+      "disco-api.com",
+      "discoveryplus.com",
+      "x-default-stgec.uplynk.com",
+      "discovery.com",
+      "discoveryplus.co.uk",
+      "getblueshift.com",
+      "litix.io",
+      "mobile-collector.newrelic.com",
+      "discovery.uplynk.com"
+    ]
+  },
+  "ESPN+": {
+    "domain": [
+      "espn.co.uk",
+      "espn.com",
+      "espn.net",
+      "espncdn.com",
+      "espnqa.com",
+      "watchespn.com",
+      "espn.hb.omtrdc.net",
+      "espndotcom.tt.omtrdc.net",
+      "espn.api.edge.bamgrid.com"
+    ]
+  },
+  "Fox": {
+    "domain": [
+      "x-live-fox-stgec.uplynk.com",
+      "fox.com",
+      "foxdcg.com",
+      "theplatform.com",
+      "cdn-fox-networks-group-green.akamaized.net",
+      "d3cv4a9a9wh0bt.cloudfront.net",
+      "foxsports01-i.akamaihd.net",
+      "foxsports02-i.akamaihd.net",
+      "foxsports03-i.akamaihd.net"
+    ]
+  },
+  "FuboTV": {
+    "domain": [
+      "www.fubo.tv",
+      "fubo.tv"
+    ]
+  },
+  "Paramount+": {
+    "domain": [
+      "paramountplus.com",
+      "cbsi.live.ott.irdeto.com",
+      "cbsplaylistserver.aws.syncbak.com",
+      "cbsservice.aws.syncbak.com",
+      "link.theplatform.com",
+      "cbsaavideo.com",
+      "cbsi.com",
+      "cbsivideo.com",
+      "pplusstatic.com"
+    ]
+  },
+  "PeacockTV": {
+    "domain": [
+      "geolocation.onetrust.com",
+      "peacocktv.com",
+      "peacock.com"
+    ]
+  },
+  "Star+": {
+    "domain": [
+      "starplus.com",
+      "starott.com",
+      "star.api.edge.bamgrid.com",
+      "star.connections.edge.bamgrid.com",
+      "star.content.edge.bamgrid.com",
+      "star.playback.edge.bamgrid.com"
+    ]
+  },
+  "BritBox": {
+    "domain": [
+      "britbox.com",
+      "www.britbox.com",
+      "britbox.co.uk"
+    ]
+  },
+  "FXNOW": {
+    "domain": [
+      "fxnow.fxnetworks.com"
+    ]
+  },
+  "Philo": {
+    "domain": [
+      "philo.com"
+    ]
+  },
+  "Shudder": {
+    "domain": [
+      "shudder.com",
+      "www.shudder.com"
+    ]
+  },
+  "TLCGO": {
+    "domain": [
+      "www.tlc.com",
+      "tlc.com",
+      "go.tlc.com",
+      "geolocation.onetrust.com"
+    ]
+  },
+  "Bilibili": {
+    "domain": [
+      "yo9.com",
+      "bilicomics.com",
+      "acg.tv",
+      "acgvideo.com",
+      "animetamashi.cn",
+      "animetamashi.com",
+      "anitama.cn",
+      "anitama.net",
+      "b23.tv",
+      "bigfun.cn",
+      "bigfunapp.cn",
+      "bili22.cn",
+      "bili2233.cn",
+      "bili23.cn",
+      "bili33.cn",
+      "biliapi.com",
+      "biliapi.net",
+      "bilibili.cc",
+      "bilibili.cn",
+      "bilibili.com",
+      "bilibili.net",
+      "bilibili.tv",
+      "bilibilipay.cn",
+      "bilibilipay.com",
+      "bilicdn1.com",
+      "bilicdn2.com",
+      "bilicdn3.com",
+      "bilicdn4.com",
+      "bilicdn5.com",
+      "biligo.com",
+      "biliintl.com",
+      "bilivideo.cn",
+      "bilivideo.com",
+      "bilivideo.net",
+      "dreamcast.hk",
+      "hdslb.com",
+      "hdslb.org",
+      "im9.com",
+      "maoercdn.com",
+      "mincdn.com"
+    ]
+  },
+  "MyTvSuper": {
+    "domain": [
+      "bigbigchannel.com.hk",
+      "bigbigshop.com",
+      "content.jwplatform.com",
+      "encoretvb.com",
+      "mytvsuper.com",
+      "mytvsuperlimited.hb.omtrdc.net",
+      "mytvsuperlimited.sc.omtrdc.net"
+    ]
+  },
+  "VIU": {
+    "domain": [
+      "www.viu.tv",
+      "www.viu.com",
+      "viu.tv",
+      "viu.com",
+      "d3o7oi00quuwqu.cloudfront.net"
+    ]
+  },
+  "Wavve": {
+    "domain": [
+      "wavve.com",
+      "pooq.co.kr"
+    ]
+  },
+  "Tving": {
+    "domain": [
+      "tving.com"
+    ]
+  }
+}
