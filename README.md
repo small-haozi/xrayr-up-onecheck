@@ -23,10 +23,6 @@ curl -sSL https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/main/i
 ```
 
 
-解锁类型：<br>
-1.为NF解锁的配置<br>
-2.为自建分流节点的配置
-
 解锁项目：
 
 
