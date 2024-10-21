@@ -42,7 +42,7 @@ echo "NODE_ID=$NODE_ID" > "$PARAM_FILE"
 echo "NODE_TYPE=$NODE_TYPE" >> "$PARAM_FILE"
 echo "UNLOCK_SERVICES=$UNLOCK_SERVICES" >> "$PARAM_FILE"
 
-echo "最近一次的参数已保存到 /etc/xrayr-onecheck/last_params.txt 中，可查看最近一次的配置项"
+echo "${YELLOW}最近一次的参数已保存到${GREEN} /etc/xrayr-onecheck/last_params.txt ${YELLOW}中，可查看最近一次的配置项${NC}"
 
 # 备份原文件
 echo -e "${BLUE}备份原配置文件...${NC}"
@@ -229,7 +229,7 @@ VPS_IP=$(curl -s -4 ifconfig.me)  # 强制获取 IPv4 地址
 REGION=$(curl -s ipinfo.io/$VPS_IP | jq -r '.country')
 
 echo -e "${GREEN}本机ip为${MAGENTA} $VPS_IP${NC}"
-echo -e "${GREEN}地区为${MAGENTA} $REGION${NC}"
+echo -e "${GREEN}地区为${MAGENTA} $REGION ${GREEN}将优先使用本地区解锁 ${NC}"
 
 echo -e "${BLUE}备份原 route.json...${NC}"
 cp /etc/XrayR/route.json /etc/XrayR/route.json.bak
