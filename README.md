@@ -31,25 +31,20 @@ curl -sSL https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/main/i
 解锁项目：
 
 
-| A                   | B                   | C                   | D                   | E                   | F                   |
-|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|
-| Abema               | BBC                 | CatchPlay           | DAZN                |                     | FOD                 |
-|                     | Bilibili            | ChatGPT             | DAM                 |                     | FuboTV              |
-|                     | BritBox             |                     | Discovery+          |                     | FXNOW               |
-|                     |                     |                     | Disney+             |                     |                     |
+| A                   | B                   | C                   | D                   | F                   | H                   | J                   | K                   | L                   |
+|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|
+| Abema               | BBC                 | CatchPlay           | DAZN                | FOD                 | HBO Max             | J-OnDemand          | KKTV                | LiTV                |
+|                     | Bilibili            | ChatGPT             | DAM                 | FuboTV              | Hulu                |                     |                     | MyTvSuper           |
+|                     | BritBox             |                     | Discovery+          |                     |                     |                     |                     | NaverTV             |
+|                     |                     |                     |                     |                     |                     |                     |                     | Niconico            |
+|                     |                     |                     |                     |                     |                     |                     |                     |                     |
 
-| H                   | J                   | K                   | L                   | M                   | N                   |
-|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|
-| HBO Max             | J-OnDemand          | KKTV                | LiTV                | MyTvSuper           | NaverTV             |
-| Hulu                |                     |                     |                     |                     | Niconico            |
-
-| P                   | R                   | S                   | T                   | U                   | V                   |
-|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|
-| Paramount+          | Radiko              | Shudder             | TikTok              | UNEXT               | VIU                 |
-| PeacockTV           |                     | Spotify             |                     |                     | Wavve               |
-|                     |                     | Steam               |                     |                     | Watcha              |
-|                     |                     | SpotvNow            |                     |                     |                     |
-|                     |                     | Telasa              |                     |                     |                     |
-|                     |                     | Tving               |                     |                     |                     |
+| P                   | R                   | S                   | T                   | U                   | V                   | W                   |                     |                     |
+|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|
+| Paramount+          | Radiko              | Shudder             | TikTok              | UNEXT               | VIU                 | Wavve               | Watcha              |                     |
+| PeacockTV           |                     | Spotify             | Steam               |                     |                     |                     |                     |                     |
+|                     |                     | SpotvNow            |                     |                     |                     |                     |                     |                     |
+|                     |                     | Telasa              |                     |                     |                     |                     |                     |                     |
+|                     |                     | Tving               |                     |                     |                     |                     |                     |                     |
 
 
