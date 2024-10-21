@@ -30,7 +30,6 @@ curl -sSL https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/main/i
 
 解锁项目：
 
-|---------------------|---------------------|---------------------|
 | YouTube             | LineTV              | Watcha              |
 | Netflix             | CatchPlay           | SpotvNow            |
 | Disney+             | Niconico            | Discovery+          |
