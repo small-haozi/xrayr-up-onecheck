@@ -83,7 +83,7 @@ Nodes:
       DeviceOnlineMinTraffic: $REPORT_THRESHOLD  # V2board面板设备数限制统计阈值，大于此流量时上报设备数在线，单位kB，不填则默认上报
       EnableDNS: false # Use custom DNS config, Please ensure that you set the dns.json well
       DNSType: AsIs # AsIs, UseIP, UseIPv4, UseIPv6, DNS strategy
-      EnableProxyProtocol: true # Only works for WebSocket and TCP
+      EnableProxyProtocol: false # Only works for WebSocket and TCP
       AutoSpeedLimitConfig:
         Limit: 0 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
         WarnTimes: 0 # After (WarnTimes) consecutive warnings, the user will be limited. Set to 0 to punish overspeed user immediately.
