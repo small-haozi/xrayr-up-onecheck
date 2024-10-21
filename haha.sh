@@ -116,23 +116,23 @@ EOL
 # 根据审计和优化连接配置的选项进行替换
 if [ "$AUDIT_ENABLED" == "y" ]; then
     echo -e "${YELLOW}启用审计，更新配置...${NC}"
-    sed -i "s|^RouteConfigPath: .*|RouteConfigPath: /etc/XrayR/route.json|" /etc/XrayR/config.yml
-    sed -i "s|^OutboundConfigPath: .*|OutboundConfigPath: /etc/XrayR/custom_outbound.json|" /etc/XrayR/config.yml
+    sed -i "s|^RouteConfigPath: .*|RouteConfigPath: /etc/XrayR/route.json # Path to route config, check https://xtls.github.io/config/routing.html for help|" /etc/XrayR/config.yml
+    sed -i "s|^OutboundConfigPath: .*|OutboundConfigPath: /etc/XrayR/custom_outbound.json # Path to custom outbound config, check https://xtls.github.io/config/outbound.html for help|" /etc/XrayR/config.yml
 else
     echo -e "${YELLOW}未启用审计，更新配置...${NC}"
-    sed -i "s|^RouteConfigPath: .*|RouteConfigPath: # /etc/XrayR/route.json|" /etc/XrayR/config.yml
-    sed -i "s|^OutboundConfigPath: .*|OutboundConfigPath: # /etc/XrayR/custom_outbound.json|" /etc/XrayR/config.yml
+    sed -i "s|^RouteConfigPath: .*|RouteConfigPath: # /etc/XrayR/route.json # Path to route config, check https://xtls.github.io/config/routing.html for help|" /etc/XrayR/config.yml
+    sed -i "s|^OutboundConfigPath: .*|OutboundConfigPath: # /etc/XrayR/custom_outbound.json # Path to custom outbound config, check https://xtls.github.io/config/outbound.html for help|" /etc/XrayR/config.yml
 fi
 
 if [ "$OPTIMIZE_CONNECTION" == "y" ]; then
     echo -e "${YELLOW}启用连接优化，更新配置...${NC}"
     sed -i "/^ConnectionConfig:/,/^Nodes:/ {
         s|^ConnectionConfig:.*|ConnectionConfig:|; 
-        s|^  Handshake:.*|  Handshake: 8|; 
-        s|^  ConnIdle:.*|  ConnIdle: 10|; 
-        s|^  UplinkOnly:.*|  UplinkOnly: 4|; 
-        s|^  DownlinkOnly:.*|  DownlinkOnly: 4|; 
-        s|^  BufferSize:.*|  BufferSize: 64|; 
+        s|^  Handshake:.*|  Handshake: 8 # Handshake time limit, Second|; 
+        s|^  ConnIdle:.*|  ConnIdle: 10 # Connection idle time limit, Second|; 
+        s|^  UplinkOnly:.*|  UplinkOnly: 4  # Time limit when the connection downstream is closed, Second|; 
+        s|^  DownlinkOnly:.*|  DownlinkOnly: 4 # Time limit when the connection is closed after the uplink is closed, Second|; 
+        s|^  BufferSize:.*|  BufferSize: 64 # The internal cache size of each connection, kB|; 
     }" /etc/XrayR/config.yml
 else
     echo -e "${YELLOW}未启用优化连接配置${NC}"
