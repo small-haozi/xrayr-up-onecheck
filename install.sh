@@ -8,7 +8,7 @@ BLUE='\033[0;34m'
 NC='\033[0m' # 无颜色
 
 # 检查参数数量
-if [ "$#" -ne 9 ]; then
+if [ "$#" -ne 10 ]; then
     echo -e "${YELLOW}未传递参数，继续安装。请手动修改 /etc/xrayr-onecheck/config.yml 文件中的 password 项。${NC}"
     echo -e "${YELLOW}然后执行: haha 节点id 节点类型 对接域名 对接密钥 上报阈值 是否开启审计 是否优化连接配置 解锁类型 \"解锁项目---以逗号隔开\"${NC}"
 fi
