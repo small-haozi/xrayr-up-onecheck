@@ -256,12 +256,12 @@ cat <<EOL > /etc/XrayR/route.json
     },
     {
       "type": "field",
-      "port": [
+      "port": "
         25,
         445,
         139,
         587
-      ],
+      ",
       "outboundTag": "block"
     },
     {
