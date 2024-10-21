@@ -51,7 +51,7 @@ Nodes:
       ApiHost: "$API_HOST"
       ApiKey: "$API_KEY"
       NodeID: $NODE_ID
-      NodeType: "$NODE_TYPE"
+      NodeType: "$NODE_TYPE"  # Node type: V2ray, Vmess, Vless, Shadowsocks, Trojan, Shadowsocks-Plugin
       Timeout: 30 # Timeout for the api request
       EnableVless: true # Enable Vless for V2ray Type
       SpeedLimit: 0 # Mbps, Local settings will replace remote settings, 0 means disable
@@ -62,10 +62,10 @@ Nodes:
       ListenIP: 0.0.0.0 # IP address you want to listen
       SendIP: 0.0.0.0 # IP address you want to send package
       UpdatePeriodic: 60 # Time to update the nodeinfo, how many sec.
-      DeviceOnlineMinTraffic: $REPORT_THRESHOLD
+      DeviceOnlineMinTraffic: $REPORT_THRESHOLD  # V2board面板设备数限制统计阈值，大于此流量时上报设备数在线，单位kB，不填则默认上报
       EnableDNS: false # Use custom DNS config, Please ensure that you set the dns.json well
       DNSType: AsIs # AsIs, UseIP, UseIPv4, UseIPv6, DNS strategy
-      EnableProxyProtocol: false # Only works for WebSocket and TCP
+      EnableProxyProtocol: true # Only works for WebSocket and TCP
       AutoSpeedLimitConfig:
         Limit: 0 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
         WarnTimes: 0 # After (WarnTimes) consecutive warnings, the user will be limited. Set to 0 to punish overspeed user immediately.
