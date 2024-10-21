@@ -44,7 +44,7 @@ curl -sSL https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/main/i
 | 10)  | ChatGPT             | 30)  | Hulu                | 50)  | BritBox             |
 | 11)  | Steam               | 31)  | WOWOW               | 51)  | FXNOW               |
 | 12)  | PrimeVideo          | 32)  | J-OnDemand          | 52)  | Philo               |
-| 13)  | TVBAnywhere         | 33)  | DMM                 | 53)  | Shudder             |
+| 13)  | TVB                 | 33)  | DMM                 | 53)  | Shudder             |
 | 14)  | Spotify             | 34)  | JapaneseGames       | 54)  | TLCGO               |
 | 15)  | VIU                 | 35)  | Wavve               | 55)  | BBC                 |
 | 16)  | MyTvSuper           | 36)  | Tving               |      |                     |
