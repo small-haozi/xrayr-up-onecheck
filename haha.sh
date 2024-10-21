@@ -27,7 +27,7 @@ UNLOCK_SERVICES=$8
 # 保存最近一次的参数到文件
 PARAM_FILE="/etc/xrayr/last_params.txt"
 
-# 将参数写入文件（不进行备份）
+# 将参数写入文件  仅保存最近一次
 echo "NODE_ID=$NODE_ID" > "$PARAM_FILE"
 echo "NODE_TYPE=$NODE_TYPE" >> "$PARAM_FILE"
 echo "UNLOCK_SERVICES=$UNLOCK_SERVICES" >> "$PARAM_FILE"
