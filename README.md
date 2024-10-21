@@ -38,12 +38,12 @@ curl -sSL https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/main/i
 | 4)   | Bilibili            | 24)  | FOD                 | 44)  | ESPN+               |
 | 5)   | TikTok              | 25)  | DAM                 | 45)  | Fox                 |
 | 6)   | DAZN                | 26)  | UNEXT               | 46)  | FuboTV              |
-| 7)   | Abema               | 27)  | Music.JP            | 47)  | Paramount+          |
+| 7)   | Abema               | 27)  | Music_JP            | 47)  | Paramount+          |
 | 8)   | Bahamut             | 28)  | Radiko              | 48)  | PeacockTV           |
 | 9)   | HBO Max             | 29)  | Telasa              | 49)  | Star+               |
 | 10)  | ChatGPT             | 30)  | Hulu                | 50)  | BritBox             |
 | 11)  | Steam               | 31)  | WOWOW               | 51)  | FXNOW               |
-| 12)  | AmazonPrimeVideo    | 32)  | J-OnDemand          | 52)  | Philo               |
+| 12)  | PrimeVideo          | 32)  | J-OnDemand          | 52)  | Philo               |
 | 13)  | TVBAnywhere         | 33)  | DMM                 | 53)  | Shudder             |
 | 14)  | Spotify             | 34)  | JapaneseGames       | 54)  | TLCGO               |
 | 15)  | VIU                 | 35)  | Wavve               | 55)  | BBC                 |
