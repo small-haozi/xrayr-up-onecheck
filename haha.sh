@@ -350,4 +350,6 @@ else
   echo -e "${RED}XrayR重启失败 请检查配置{NC}"
 fi
 
+echo -e "${YELLOW}脚本执行完成！${NC}"
+xrayr
 
