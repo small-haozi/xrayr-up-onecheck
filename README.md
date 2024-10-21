@@ -47,4 +47,14 @@ curl -sSL https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/main/i
 |                     |                     | Telasa              |                     |                     |                     |                     |
 |                     |                     | Tving               |                     |                     |                     |                     |
 
+| A                  | B                  | C                  | D                  | E                  | F                  | G                  | H                  |
+|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| Abema              | Bahamut            | BBC                | Bilibili           | BritBox            | CatchPlay          | ChatGPT            | DAZN               |
+| DAM                | Discovery+         | Disney+            | ESPN+              | FOD                | Fox                | FuboTV             | HBO Max            |
+| J-OnDemand         | KKTV               | LiTV               | LineTV             | Music_JP           | Niconico           | NowE               | Paramount+         |
+| PeacockTV          | Philo              | Radiko             | Shudder            | SpotvNow           | Steam              | Tving              | TLCGO              |
+| TikTok             | UNEXT              | VIU                | WOWOW              |                    |                    |                    |                    |
+|                    |                    |                    |                    |                    |                    |                    |                    |
+
+
 
