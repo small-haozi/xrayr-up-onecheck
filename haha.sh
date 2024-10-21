@@ -276,7 +276,7 @@ cat <<EOL > /etc/XrayR/route.json
         "regexp:(.*.)(shenzhoufilm|secretchina|renminbao|aboluowang|mhradio|guangming|zhengwunet|soundofhope|yuanming|zhuichaguoji|fgmtv|xinsheng|shenyunperformingarts|bannedbook|pincong|rfi|mingjingnews|boxun|scmp|ogate|voachinese).(org|com|net|rocks|fr)",
         "regexp:(.*.)(dafahao|minghui|dongtaiwang|dajiyuan|falundata|shenyun|tuidang|epochweekly|epochtimes|ntdtv|falundafa|wujieliulan|zhengjian).(org|com|net|name|best|info|us|my|tw|hk|cn|cc|co|fr|me|rocks|im)"
       ]
-    },
+    }
 EOL
 
 # 从 custom_route_templates.json 中读取域名
