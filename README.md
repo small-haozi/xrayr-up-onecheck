@@ -39,12 +39,12 @@ curl -sSL https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/main/i
 |                     |                     |                     |                     |                     |                     |                     |                     | Niconico            |
 |                     |                     |                     |                     |                     |                     |                     |                     |                     |
 
-| P                   | R                   | S                   | T                   | U                   | V                   | W                   |                     |                     |
-|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|
-| Paramount+          | Radiko              | Shudder             | TikTok              | UNEXT               | VIU                 | Wavve               | Watcha              |                     |
-| PeacockTV           |                     | Spotify             | Steam               |                     |                     |                     |                     |                     |
-|                     |                     | SpotvNow            |                     |                     |                     |                     |                     |                     |
-|                     |                     | Telasa              |                     |                     |                     |                     |                     |                     |
-|                     |                     | Tving               |                     |                     |                     |                     |                     |                     |
+| P                   | R                   | S                   | T                   | U                   | V                   | W                   |
+|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|
+| Paramount+          | Radiko              | Shudder             | TikTok              | UNEXT               | VIU                 | Wavve               |
+| PeacockTV           |                     | Spotify             | Steam               |                     |                     | Watcha              |
+|                     |                     | SpotvNow            |                     |                     |                     |                     |
+|                     |                     | Telasa              |                     |                     |                     |                     |
+|                     |                     | Tving               |                     |                     |                     |                     |
 
 
