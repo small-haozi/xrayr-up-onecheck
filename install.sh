@@ -17,13 +17,49 @@ fi
 UUID=$1  # 如果没有传递第一个参数，使用默认值
 shift  # 移除第一个参数，后面的参数将被传递给 haha.sh
 
+# 检查并安装 sudo
+if ! command -v sudo &> /dev/null; then
+    echo -e "${YELLOW}sudo 未安装，正在安装...${NC}"
+    if [ -f /etc/debian_version ]; then
+        # 对于 Debian 和 Ubuntu
+        apt update
+        apt install -y sudo
+    elif [ -f /etc/redhat-release ]; then
+        # 对于 CentOS
+        yum install -y sudo
+    else
+        echo -e "${RED}不支持的操作系统。${NC}"
+        exit 1
+    fi
+fi
+
 # 更新包列表
 echo -e "${BLUE}更新包列表...${NC}"
-apt update
+if [ -f /etc/debian_version ]; then
+    # 对于 Debian 和 Ubuntu
+    sudo apt update
+elif [ -f /etc/redhat-release ]; then
+    # 对于 CentOS
+    sudo yum check-update
+else
+    echo -e "${RED}不支持的操作系统。${NC}"
+    exit 1
+fi
 
-# 安装 curl 和 jq
-echo -e "${BLUE}安装 curl 和 jq...${NC}"
-apt install -y curl jq
+# 检查是否安装了 wget
+if ! command -v wget &> /dev/null; then
+    echo -e "${RED}wget 未安装，正在安装 wget...${NC}"
+    if [ -f /etc/debian_version ]; then
+        # 对于 Debian 和 Ubuntu
+        sudo apt install -y wget
+    elif [ -f /etc/redhat-release ]; then
+        # 对于 CentOS
+        sudo yum install -y wget
+    else
+        echo -e "${RED}不支持的操作系统。${NC}"
+        exit 1
+    fi
+fi
 
 # 检查是否安装了 XrayR
 if ! command -v xrayr &> /dev/null; then
@@ -35,8 +71,19 @@ fi
 
 # 检查是否安装了 jq
 if ! command -v jq &> /dev/null; then
-    echo -e "${RED}jq 未安装，正在安装 jq...${NC}"
-    apt install -y jq
+    # 安装 jq
+    echo -e "${BLUE}jq未安装，正在安装 jq...${NC}"
+    
+    if [ -f /etc/debian_version ]; then
+        # 对于 Debian 和 Ubuntu
+        sudo apt install -y jq
+    elif [ -f /etc/redhat-release ]; then
+        # 对于 CentOS
+        sudo yum install -y jq
+    else
+        echo -e "${RED}不支持的操作系统。${NC}"
+        exit 1
+    fi
 else
     echo -e "${GREEN}jq 已安装。${NC}"
 fi
@@ -44,7 +91,17 @@ fi
 # 检查是否安装了 curl
 if ! command -v curl &> /dev/null; then
     echo -e "${RED}curl 未安装，正在安装 curl...${NC}"
-    apt install -y curl
+    # 安装 curl
+    if [ -f /etc/debian_version ]; then
+        # 对于 Debian 和 Ubuntu
+        sudo apt install -y curl
+    elif [ -f /etc/redhat-release ]; then
+        # 对于 CentOS
+        sudo yum install -y curl
+    else
+        echo -e "${RED}不支持的操作系统。${NC}"
+        exit 1
+    fi
 else
     echo -e "${GREEN}curl 已安装。${NC}"
 fi
