@@ -26,7 +26,7 @@ haha 节点id 节点类型 对接域名 对接密钥 上报阈值 是否开启�
 
 一条命令解决问题  一条命令的情况下 要加一个参数NF lock的uuid
 ```
-curl -s https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/main/install.sh | bash curl -sSL https://raw.githubusercontent.com/yourusername/yourrepo/master/install.sh | bash -s -- <解锁项目的uuid> 节点id 节点类型 对接域名 对接密钥 上报阈值 是否开启审计 是否优化连接配置 "解锁项目,以逗号隔开"
+curl -sSL https://raw.githubusercontent.com/yourusername/yourrepo/master/install.sh | bash -s -- <解锁项目的uuid> 节点id 节点类型 对接域名 对接密钥 上报阈值 是否开启审计 是否优化连接配置 "解锁项目,以逗号隔开"
 ```
 
 
