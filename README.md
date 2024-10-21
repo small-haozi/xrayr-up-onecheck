@@ -31,40 +31,25 @@ curl -sSL https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/main/i
 解锁项目：
 
 
-| A                   | B                   | C                   |
-|---------------------|---------------------|---------------------|
-| Abema               | BBC                 | CatchPlay           |
-|                     | Bilibili            | ChatGPT             |
-|                     | BritBox             |                     |
+| A                   | B                   | C                   | D                   | E                   | F                   |
+|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|
+| Abema               | BBC                 | CatchPlay           | DAZN                |                     | FOD                 |
+|                     | Bilibili            | ChatGPT             | DAM                 |                     | FuboTV              |
+|                     | BritBox             |                     | Discovery+          |                     | FXNOW               |
+|                     |                     |                     | Disney+             |                     |                     |
 
-| D                   | E                   | F                   |
-|---------------------|---------------------|---------------------|
-| DAZN                |                     | FOD                 |
-| DAM                 |                     | FuboTV              |
-| Discovery+          |                     | FXNOW               |
-| Disney+             |                     |                     |
+| H                   | J                   | K                   | L                   | M                   | N                   |
+|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|
+| HBO Max             | J-OnDemand          | KKTV                | LiTV                | MyTvSuper           | NaverTV             |
+| Hulu                |                     |                     |                     |                     | Niconico            |
 
-| H                   | J                   | K                   |
-|---------------------|---------------------|---------------------|
-| HBO Max             | J-OnDemand          | KKTV                |
-| Hulu                |                     |                     |
-
-| L                   | N                   | P                   |
-|---------------------|---------------------|---------------------|
-| LiTV                | NaverTV             | Paramount+          |
-|                     | Niconico            | PeacockTV           |
-
-| R                   | S                   | T                   |
-|---------------------|---------------------|---------------------|
-| Radiko              | Shudder             | TikTok              |
-|                     | Spotify             |                     |
-|                     | Steam               |                     |
-|                     | SpotvNow            |                     |
-|                     | Telasa              |                     |
-|                     | Tving               |                     |
-|                     | UNEXT               |                     |
-|                     | VIU                 |                     |
-|                     | Wavve               |                     |
-|                     | Watcha              |                     |
+| P                   | R                   | S                   | T                   | U                   | V                   |
+|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|
+| Paramount+          | Radiko              | Shudder             | TikTok              | UNEXT               | VIU                 |
+| PeacockTV           |                     | Spotify             |                     |                     | Wavve               |
+|                     |                     | Steam               |                     |                     | Watcha              |
+|                     |                     | SpotvNow            |                     |                     |                     |
+|                     |                     | Telasa              |                     |                     |                     |
+|                     |                     | Tving               |                     |                     |                     |
 
 
