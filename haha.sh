@@ -361,5 +361,4 @@ else
 fi
 
 echo -e "${YELLOW}脚本执行完成！${NC}"
-xrayr
 
