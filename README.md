@@ -8,15 +8,7 @@ wget -qO- https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/main/i
 # 使用 curl 下载并直接运行安装脚本
 curl -s https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/main/install.sh | bash
 ```
-使用：
-
-```
-# 执行脚本
-haha
-```
-
-或
-
+注意：此版本必须携带参数 否则执行了就像放了个气体
 ```
 # 携带参数执行脚本
 haha 节点id 节点类型 对接域名 对接密钥 上报阈值 是否开启审计 是否优化连接配置 "解锁项目,以逗号隔开"
