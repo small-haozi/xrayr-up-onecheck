@@ -25,7 +25,7 @@ OPTIMIZE_CONNECTION=$7
 UNLOCK_SERVICES=$8
 
 # 保存最近一次的参数到文件
-PARAM_FILE="last_params.txt"
+PARAM_FILE="/etc/xrayr/last_params.txt"
 
 # 将参数写入文件（不进行备份）
 echo "NODE_ID=$NODE_ID" > "$PARAM_FILE"
