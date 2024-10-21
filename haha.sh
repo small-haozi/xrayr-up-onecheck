@@ -9,8 +9,9 @@ MAGENTA='\033[1;35m'
 NC='\033[0m' # 无颜色
 
 # 检查参数数量
-if [ "$#" -ne 8 ]; then
-    echo -e "${RED}用法: $0 节点id 节点类型 对接域名 对接密钥 上报阈值 是否开启审计 是否优化连接配置 解锁项目${NC}"
+if [ "$#" -ne 9 ]; then
+    echo -e "${RED}携带参数不正确，请重新输入${NC}"
+    echo -e "${RED}用法: $0 节点id 节点类型 对接域名 对接密钥 上报阈值 是否开启审计 是否开启真实ip传递 是否优化连接配置 解锁项目${NC}"
     exit 1
 fi
 
@@ -29,8 +30,9 @@ API_HOST=$3
 API_KEY=$4
 REPORT_THRESHOLD=$5
 AUDIT_ENABLED=$6
-OPTIMIZE_CONNECTION=$7
-UNLOCK_SERVICES=$8
+PROXY_PROTOCOL=$7
+OPTIMIZE_CONNECTION=$8
+UNLOCK_SERVICES=$9
 
 # 保存最近一次的参数到文件
 PARAM_FILE="/etc/xrayr/last_params.txt"
@@ -142,6 +144,15 @@ else
     sed -i "s|^OutboundConfigPath: .*|OutboundConfigPath: # /etc/XrayR/custom_outbound.json # Path to custom outbound config, check https://xtls.github.io/config/outbound.html for help|" /etc/XrayR/config.yml
 fi
 
+
+if [ "$PROXY_PROTOCOL" == "y" ]; then
+    echo -e "${YELLOW}启用真实ip传递，更新配置...${NC}"
+    sed -i "s|^EnableProxyProtocol: .*|EnableProxyProtocol: true # Only works for WebSocket and TCP
+else
+    echo -e "${YELLOW}未启用传递真实ip配置${NC}"
+fi
+
+
 if [ "$OPTIMIZE_CONNECTION" == "y" ]; then
     echo -e "${YELLOW}启用连接优化，更新配置...${NC}"
     sed -i "/^ConnectionConfig:/,/^Nodes:/ {
@@ -155,6 +166,8 @@ if [ "$OPTIMIZE_CONNECTION" == "y" ]; then
 else
     echo -e "${YELLOW}未启用优化连接配置${NC}"
 fi
+
+
 
 echo -e "${BLUE}备份原 custom_outbound.json...${NC}"
 cp /etc/XrayR/custom_outbound.json /etc/XrayR/custom_outbound.json.bak
