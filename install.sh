@@ -14,7 +14,7 @@ if [ "$#" -ne 9 ]; then
 fi
 
 # 获取参数
-UUID=${1:-"<解锁项目的uuid>"}  # 如果没有传递第一个参数，使用默认值
+UUID=$1  # 如果没有传递第一个参数，使用默认值
 shift  # 移除第一个参数，后面的参数将被传递给 haha.sh
 
 # 更新包列表
@@ -54,14 +54,14 @@ mkdir -p /etc/xrayr-onecheck
 
 # 下载所需文件
 echo -e "${BLUE}下载 haha.sh 到 /etc/xrayr-onecheck...${NC}"
-wget -N --progress=bar https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/refs/heads/main/haha.sh -O /etc/xrayr-onecheck/haha.sh
+wget -N --progress=bar https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/main/haha.sh -O /etc/xrayr-onecheck/haha.sh
 
 echo -e "${BLUE}下载 config.yml 到 /etc/xrayr-onecheck...${NC}"
-wget -N --progress=bar https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/refs/heads/main/config.yml -O /etc/xrayr-onecheck/config.yml
+wget -N --progress=bar https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/main/config.yml -O /etc/xrayr-onecheck/config.yml
 
 echo -e "${BLUE}下载 custom_route_templates.json 到 /etc/xrayr-onecheck/templates...${NC}"
 mkdir -p /etc/xrayr-onecheck/templates
-wget -N --progress=bar https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/refs/heads/main/templates/custom_route_templates.json -O /etc/xrayr-onecheck/templates/custom_route_templates.json
+wget -N --progress=bar https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/main/templates/custom_route_templates.json -O /etc/xrayr-onecheck/templates/custom_route_templates.json
 
 # 设置文件权限
 chmod +x "/etc/xrayr-onecheck/haha.sh"
