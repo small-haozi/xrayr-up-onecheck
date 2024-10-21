@@ -338,3 +338,16 @@ EOL
 
 # 输出结果
 echo -e "${GREEN}已更新 config.yml、custom_outbound.json 和 route.json 文件${NC}"
+
+echo -e "${BLUE}重启XrayR...${NC}"
+systemctl restart XrayR
+# 等待5秒
+sleep 5
+# 检查 XrayR 是否运行
+if systemctl is-active --quiet XrayR; then
+  echo -e "${GREEN}XrayR重启成功${NC}"
+else
+  echo -e "${RED}XrayR重启失败 请检查配置{NC}"
+fi
+
+
