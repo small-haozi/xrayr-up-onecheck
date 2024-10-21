@@ -39,7 +39,6 @@ curl -sSL https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/main/i
 |                    | BBC                | CoupangPlay        | DAM                |                    | FuboTV             | Hulu               |                    |                    |
 |                    | BritBox            |                    | DMM                |                    | FXNOW              |                    |                    |                    |
 |                    |                    |                    | Discovery+         |                    |                    |                    |                    |                    |
-|                    |                    |                    |                    |                    |                    |                    |                    |                    |
 
 | L                  | M                  | N                  | p                  | R                  | S                  | T                  | U                  | W                  | Y                  |
 |--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
@@ -48,7 +47,6 @@ curl -sSL https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/main/i
 |                    |                    | Niconico           | PeacockTV          | FuboTV             | Spotify            | Telasa             |                    |                    |                    |
 |                    |                    | NaverTV            | Philo              | FXNOW              | Steam              | Tving              |                    |                    |                    |
 |                    |                    |                    |                    |                    |                    | TLCGO              |                    |                    |                    |
-|                    |                    |                    |                    |                    |                    |                    |                    |                    |                    |
 
 
 
