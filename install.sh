@@ -54,14 +54,14 @@ mkdir -p /etc/xrayr-onecheck
 
 # 下载所需文件
 echo -e "${BLUE}下载 haha.sh 到 /etc/xrayr-onecheck...${NC}"
-wget -N --progress=bar https://raw.githubusercontent.com/yourusername/yourrepo/master/haha.sh -O /etc/xrayr-onecheck/haha.sh
+wget -N --progress=bar https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/refs/heads/main/haha.sh -O /etc/xrayr-onecheck/haha.sh
 
 echo -e "${BLUE}下载 config.yml 到 /etc/xrayr-onecheck...${NC}"
-wget -N --progress=bar https://raw.githubusercontent.com/yourusername/yourrepo/master/config.yml -O /etc/xrayr-onecheck/config.yml
+wget -N --progress=bar https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/refs/heads/main/config.yml -O /etc/xrayr-onecheck/config.yml
 
 echo -e "${BLUE}下载 custom_route_templates.json 到 /etc/xrayr-onecheck/templates...${NC}"
 mkdir -p /etc/xrayr-onecheck/templates
-wget -N --progress=bar https://raw.githubusercontent.com/yourusername/yourrepo/master/templates/custom_route_templates.json -O /etc/xrayr-onecheck/templates/custom_route_templates.json
+wget -N --progress=bar https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/refs/heads/main/templates/custom_route_templates.json -O /etc/xrayr-onecheck/templates/custom_route_templates.json
 
 # 设置文件权限
 chmod +x "/etc/xrayr-onecheck/haha.sh"
