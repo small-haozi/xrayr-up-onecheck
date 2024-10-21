@@ -24,6 +24,16 @@ AUDIT_ENABLED=$6
 OPTIMIZE_CONNECTION=$7
 UNLOCK_SERVICES=$8
 
+# 保存最近一次的参数到文件
+PARAM_FILE="last_params.txt"
+
+# 将参数写入文件（不进行备份）
+echo "NODE_ID=$NODE_ID" > "$PARAM_FILE"
+echo "NODE_TYPE=$NODE_TYPE" >> "$PARAM_FILE"
+echo "UNLOCK_SERVICES=$UNLOCK_SERVICES" >> "$PARAM_FILE"
+
+echo "最近一次的参数已保存到 /etc/xrayr/last_params.txt 中，可查看最近一次的配置项"
+
 # 备份原文件
 echo -e "${BLUE}备份原配置文件...${NC}"
 cp /etc/XrayR/config.yml /etc/XrayR/config.yml.bak
