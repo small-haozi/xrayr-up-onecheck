@@ -13,13 +13,13 @@ curl -s https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/main/ins
 
 ```
 # 携带参数执行脚本
-haha 节点id 节点类型 对接域名 对接密钥 上报阈值 是否开启审计 是否优化连接配置 "解锁项目,以逗号隔开"
+haha 节点id 节点类型 对接域名 对接密钥 上报阈值 是否开启审计 是否开启真实ip传递 是否优化连接配置 "解锁项目,以逗号隔开"
 ```
-示例：haha 1 Shadowsocks example.com your_secret_key 2000 yes yes "YouTube,Netflix"<br><br>
+示例：haha 1 Shadowsocks example.com your_secret_key 2000 y n y "YouTube,Netflix"<br><br>
 
 一条命令解决问题  一条命令的情况下 要加一个参数NF lock的uuid（也就是分流节点的密码）
 ```
-curl -sSL https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/main/install.sh | bash -s -- <解锁项目的uuid> 节点id 节点类型 对接域名 对接密钥 上报阈值 是否开启审计 是否优化连接配置 "解锁项目,以逗号隔开"
+curl -sSL https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/main/install.sh | bash -s -- <解锁项目的uuid> 节点id 节点类型 对接域名 对接密钥 上报阈值 是否开启审计 是否开启真实ip传递 是否优化连接配置 "解锁项目,以逗号隔开"
 ```
 
 
