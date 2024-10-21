@@ -42,7 +42,7 @@ echo "NODE_ID=$NODE_ID" > "$PARAM_FILE"
 echo "NODE_TYPE=$NODE_TYPE" >> "$PARAM_FILE"
 echo "UNLOCK_SERVICES=$UNLOCK_SERVICES" >> "$PARAM_FILE"
 
-echo "最近一次的参数已保存到 /etc/xrayr/last_params.txt 中，可查看最近一次的配置项"
+echo "最近一次的参数已保存到 /etc/xrayr-onecheck/last_params.txt 中，可查看最近一次的配置项"
 
 # 备份原文件
 echo -e "${BLUE}备份原配置文件...${NC}"
