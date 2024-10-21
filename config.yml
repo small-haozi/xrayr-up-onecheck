@@ -1,41 +1,42 @@
 - name: US
-  uuid: <解锁项目的uuid>
-  domain: us.example.com
-  port: 443
-  streaming_service: Netflix, Hulu
+  password: <解锁项目的uuid>
+  address: node-us.nfdns.xyz
+  outbound_port: 38383
+  streaming_service: Netflix, YouTube, Disney+, TikTok, Bilibili, VIU, TVB, PrimeVideo, DAZN, ChatGPT, Discovery+, ESPN+, Fox, FuboTV, HBO Max, Paramount+, PeacokTV, Star+, BritBox, FXNOW, Philo, Shudder, TLCGO
 
 - name: JP
-  uuid: <解锁项目的uuid>
-  domain: jp.example.com
-  port: 443
-  streaming_service: Netflix, Amazon Prime
+  password: <解锁项目的uuid>
+  address: node-jp.nfdns.xyz
+  outbound_port: 38123
+  streaming_service: Netflix, YouTube, Disney+, TikTok, Bilibili, VIU, TVB, PrimeVideo, DAZN, ChatGPT, Spotify, Abema, DAM, DMM, FOD, Music_JP, Niconico, Radiko, Telasa, UNEXT
 
 - name: HK
-  uuid: <解锁项目的uuid>
-  domain: hk.example.com
-  port: 443
-  streaming_service: Disney+
+  password: <解锁项目的uuid>
+  address: node-hk.nfdns.xyz
+  outbound_port: 38888
+  streaming_service: Netflix, YouTube, Disney+, TikTok, Bilibili, VIU, TVB, PrimeVideo, DAZN, ChatGPT, Spotify, HboGO, KKTV, LiTV, LineTV, MyTvSuper, NowE, Bahamut, CatchPlay
 
 - name: TW
-  uuid: <解锁项目的uuid>
-  domain: tw.example.com
-  port: 443
-  streaming_service: Netflix
+  password: <解锁项目的uuid>
+  address: node-tw.nfdns.xyz
+  outbound_port: 20558
+  streaming_service: Netflix, YouTube, Disney+, TikTok, Bilibili, VIU, TVB, PrimeVideo, DAZN, ChatGPT, Spotify, HboGO, KKTV, LiTV, LineTV, MyTvSuper, NowE, Bahamut, CatchPlay
+
+- name: SG
+  password: <解锁项目的uuid>
+  address: node-sg.nfdns.xyz
+  outbound_port: 20955
+  streaming_service: Netflix, YouTube, Disney+, TikTok, Bilibili, VIU, TVB, PrimeVideo, DAZN, ChatGPT, Spotify, HboGO, KKTV, LiTV, LineTV, MyTvSuper, NowE, Bahamut, CatchPlay
 
 - name: KR
-  uuid: <解锁项目的uuid>
-  domain: kr.example.com
-  port: 443
-  streaming_service: Netflix, Disney+
+  password: <解锁项目的uuid>
+  address: node-kr.nfdns.xyz
+  outbound_port: 23355
+  streaming_service: Netflix, YouTube, Disney+, TikTok, Bilibili, VIU, TVB, PrimeVideo, DAZN, ChatGPT, Spotify, Wavve, Tving, CoupangPlay, NaverTV, AfreecaTV, KBSDomestic, Watcha, SpotvNow
 
 - name: EU
-  uuid: <解锁项目的uuid>
-  domain: eu.example.com
-  port: 443
-  streaming_service: Hulu, Amazon Prime
+  password: <解锁项目的uuid>
+  address: node-uk.nfdns.xyz
+  outbound_port: 25253
+  streaming_service: Netflix, YouTube, Disney+, TikTok, Bilibili, VIU, TVB, PrimeVideo, DAZN, ChatGPT, Spotify, BBC
 
-- name: dns        # 自建节点配置这个  没有可不设置 不影响
-  uuid: <自有解锁项目的uuid>
-  domain: dns.example.com
-  port: 443
-  streaming_service: None
