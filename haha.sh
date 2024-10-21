@@ -180,6 +180,10 @@ cat <<EOL > /etc/XrayR/custom_outbound.json
     "tag": "IPv4_out",
     "sendThrough": "0.0.0.0",
     "protocol": "freedom"
+  },
+  {
+    "protocol": "blackhole",
+    "tag": "block"
   }
 EOL
 
@@ -239,10 +243,40 @@ cat <<EOL > /etc/XrayR/route.json
     {
       "type": "field",
       "outboundTag": "block",
+      "ip": [
+         "geoip:private"
+      ]
+    },
+    {
+      "type": "field",
+      "outboundTag": "block",
       "protocol": [
         "bittorrent"
       ]
-    }
+    },
+    {
+      "type": "field",
+      "port": [
+        25,
+        445,
+        139,
+        587
+      ],
+      "outboundTag": "block"
+    },
+    {
+      "type": "field",
+      "outboundTag": "block",
+      "domain": [
+        "regexp:(.*.)(^360|0360|1360|3600|360safe|qhimg|qhmsg|^yunpan|qihoo|qhcdn|qhupdate|360totalsecurity|360shouji|qihucdn|360kan|secmp).(cn|com|net)",
+        "regexp:(.guanjia.qq.com|qqpcmgr|QQPCMGR)",
+        "regexp:(.*.)(rising|kingsoft|duba|xindubawukong|jinshanduba).(com|net|org)",
+        "regexp:(api|ps|sv|offnavi|newvector|ulog.imap|newloc|tracknavi)(.map|).(baidu|n.shifen).com",
+        "regexp:((^.*@)(guerrillamail|guerrillamailblock|sharklasers|grr|pokemail|spam4|bccto|chacuo|027168).(info|biz|com|de|net|org|me|la)|Subject|HELO|SMTP)",
+        "regexp:(.*.)(shenzhoufilm|secretchina|renminbao|aboluowang|mhradio|guangming|zhengwunet|soundofhope|yuanming|zhuichaguoji|fgmtv|xinsheng|shenyunperformingarts|bannedbook|pincong|rfi|mingjingnews|boxun|scmp|ogate|voachinese).(org|com|net|rocks|fr)",
+        "regexp:(.*.)(dafahao|minghui|dongtaiwang|dajiyuan|falundata|shenyun|tuidang|epochweekly|epochtimes|ntdtv|falundafa|wujieliulan|zhengjian).(org|com|net|name|best|info|us|my|tw|hk|cn|cc|co|fr|me|rocks|im)"
+      ]
+    },
 EOL
 
 # 从 custom_route_templates.json 中读取域名
