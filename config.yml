@@ -14,7 +14,7 @@
   password: <解锁项目的uuid>
   address: node-jp.nfdns.xyz
   outbound_port: 38123
-  streaming_service: Netflix, YouTube, Disney+, TikTok, Bilibili, VIU, TVB, PrimeVideo, DAZN, ChatGPT, Spotify, Abema, DAM, DMM, FOD, Music_JP, Niconico, Radiko, Telasa, UNEXT
+  streaming_service: Netflix, YouTube, Disney+, TikTok, Bilibili, VIU, TVB, PrimeVideo, DAZN, ChatGPT, Spotify, Abema, DAM, DMM, FOD, Music_JP, Niconico, Radiko, Telasa, UNEXT, JapaneseGames, Hulu
 
 - name: HK
   password: <解锁项目的uuid>
