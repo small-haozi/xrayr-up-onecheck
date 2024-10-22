@@ -34,6 +34,12 @@
   outbound_port: 23355
   streaming_service: Netflix, YouTube, Disney+, TikTok, Bilibili, VIU, TVB, PrimeVideo, DAZN, ChatGPT, Spotify, Wavve, Tving, CoupangPlay, NaverTV, AfreecaTV, KBSDomestic, Watcha, SpotvNow
 
+- name: MY
+  password: <解锁项目的uuid>
+  address: node-tm.nfdns.xyz
+  outbound_port: 49406
+  streaming_service: Netflix, YouTube, Disney+, TikTok, Bilibili, VIU, TVB, PrimeVideo, DAZN, ChatGPT, Spotify, BBC
+
 - name: EU
   password: <解锁项目的uuid>
   address: node-uk.nfdns.xyz
