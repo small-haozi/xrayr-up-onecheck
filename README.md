@@ -27,6 +27,8 @@ curl -sSL https://raw.githubusercontent.com/small-haozi/xrayr-up-onecheck/main/i
 
 如果你嫌复制项目太麻烦，可以[点击这里](https://jiesuo.588766.xyz)使用我制作的网页生成需要解锁的项目
 
+<a href="https://example.com" target="_blank">点击这里打开新页面</a>
+
 | A                  | B                  | C                  | D                  | E                  | F                  | H                  | J                  | K                  |
 |--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
 | Abema              | Bilibili           | CatchPlay          | Disney+            | ESPN+              | FOD                | HboGO              | J-OnDemand         | KKTV               |
