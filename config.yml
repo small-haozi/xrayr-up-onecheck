@@ -38,7 +38,7 @@
   password: <解锁项目的uuid>
   address: node-tm.nfdns.xyz
   outbound_port: 49406
-  streaming_service: Netflix, YouTube, Disney+, TikTok, Bilibili, VIU, TVB, PrimeVideo, DAZN, ChatGPT, Spotify, BBC
+  streaming_service: Setanta
 
 - name: EU
   password: <解锁项目的uuid>
