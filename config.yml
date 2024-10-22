@@ -8,7 +8,7 @@
   password: <解锁项目的uuid>
   address: node-us.nfdns.xyz
   outbound_port: 38383
-  streaming_service: Netflix, YouTube, Disney+, TikTok, Bilibili, VIU, TVB, PrimeVideo, DAZN, ChatGPT, Discovery+, ESPN+, Fox, FuboTV, HBO Max, Paramount+, PeacokTV, Star+, BritBox, FXNOW, Philo, Shudder, TLCGO, Setanta, Wikipedia
+  streaming_service: Netflix, YouTube, Disney+, TikTok, Bilibili, VIU, TVB, PrimeVideo, DAZN, ChatGPT, Discovery+, ESPN+, Fox, FuboTV, HBOMax, Paramount+, PeacokTV, Star+, BritBox, FXNOW, Philo, Shudder, TLCGO, Setanta, Wikipedia
 
 - name: JP
   password: <解锁项目的uuid>
