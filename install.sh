@@ -17,6 +17,7 @@ fi
 UUID=$1  # 如果没有传递第一个参数，使用默认值
 shift  # 移除第一个参数，后面的参数将被传递给 haha.sh
 
+# 检查并安装 sudo
 if ! command -v sudo &> /dev/null; then
     echo -e "${YELLOW}sudo 未安装，正在安装...${NC}"
     apt install -y sudo
@@ -28,6 +29,7 @@ fi
 echo -e "${BLUE}更新包列表...${NC}"
 apt update
 
+# 检查并安装 wget
 if ! command -v curl &> /dev/null; then
     echo -e "${RED}curl 未安装，正在安装 curl...${NC}"
     # 安装 wget
