@@ -17,6 +17,11 @@ fi
 UUID=$1  # 如果没有传递第一个参数，使用默认值
 shift  # 移除第一个参数，后面的参数将被传递给 haha.sh
 
+
+# 更新包列表
+echo -e "${BLUE}更新包列表...${NC}"
+apt update
+
 # 检查并安装 sudo
 if ! command -v sudo &> /dev/null; then
     echo -e "${YELLOW}sudo 未安装，正在安装...${NC}"
@@ -24,10 +29,6 @@ if ! command -v sudo &> /dev/null; then
 else
     echo -e "${GREEN}sudo 已安装。${NC}"
 fi
-
-# 更新包列表
-echo -e "${BLUE}更新包列表...${NC}"
-apt update
 
 # 检查并安装 wget
 if ! command -v curl &> /dev/null; then
@@ -41,12 +42,7 @@ fi
 # 检查并安装 sed
 if ! command -v sed &> /dev/null; then
     echo -e "${yellow}sed 未安装，正在安装...${plain}"
-    if [ -x "$(command -v apt-get)" ]; then
-        apt-get update
-        apt-get install -y sed
-    elif [ -x "$(command -v yum)" ]; then
-        yum install -y sed
-    fi
+    sudo apt install -y sed
 fi
 
 # 检查是否安装了 jq
