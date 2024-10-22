@@ -36,12 +36,15 @@ else
     echo -e "${GREEN}wget 已安装。${NC}"
 fi
 
-# 检查是否安装了 XrayR
-if ! command -v xrayr &> /dev/null; then
-    echo -e "${RED}XrayR 未安装，正在下载并安装 XrayR...${NC}"
-    wget -N --progress=bar https://raw.githubusercontent.com/wyx2685/XrayR-release/master/install.sh && bash install.sh
-else
-    echo -e "${GREEN}XrayR 已安装。${NC}"
+# 检查并安装 sed
+if ! command -v sed &> /dev/null; then
+    echo -e "${yellow}sed 未安装，正在安装...${plain}"
+    if [ -x "$(command -v apt-get)" ]; then
+        apt-get update
+        apt-get install -y sed
+    elif [ -x "$(command -v yum)" ]; then
+        yum install -y sed
+    fi
 fi
 
 # 检查是否安装了 jq
@@ -58,6 +61,14 @@ if ! command -v curl &> /dev/null; then
     sudo apt install -y curl
 else
     echo -e "${GREEN}curl 已安装。${NC}"
+fi
+
+# 检查是否安装了 XrayR
+if ! command -v xrayr &> /dev/null; then
+    echo -e "${RED}XrayR 未安装，正在下载并安装 XrayR...${NC}"
+    wget -N --progress=bar https://raw.githubusercontent.com/wyx2685/XrayR-release/master/install.sh && bash install.sh
+else
+    echo -e "${GREEN}XrayR 已安装。${NC}"
 fi
 
 # 创建目录
