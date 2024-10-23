@@ -368,7 +368,7 @@ EOL
                     if [[ -n "${service_domains[$service]}" ]]; then
                         domains=${service_domains[$service]}
                         for domain in $domains; do
-                            echo "        \"domain:$domain\"," >> /etc/XrayR/route.json
+                            echo "        \"$domain\"," >> /etc/XrayR/route.json
                         done
                     else
                         echo -e "${RED}未找到服务 $service 的域名，跳过。${NC}"
