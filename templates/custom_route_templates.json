@@ -225,6 +225,21 @@
         "domain:wowow.co.jp"
       ]
     },
+    "NewHboMax": {
+      "domain": [
+        "domain:hbo.com",
+        "domain:hbomax.com",
+        "domain:hbonow.com",
+        "domain:max.com",
+        "domain:maxgo.com",
+        "domain:hbomaxcdn.com",
+        "domain:hbo.com.c.footprint.net",
+        "domain:hbo.com.edgesuite.net",
+        "domain:hbo.map.fastly.net",
+        "domain:hbomax-images.warnermediacdn.com",
+        "domain:hbomaxdash.s.llnwi.net"
+      ]
+    },
     "J-OnDemand": {
       "domain": [
         "domain:auth.id2.zaq.ne.jp"
