@@ -2,7 +2,7 @@
   password: <解锁项目的uuid>
   address: node-sg.nfdns.xyz
   outbound_port: 20955
-  streaming_service: Netflix, YouTube, Disney+, TikTok, Bilibili, VIU, TVB, PrimeVideo, DAZN, ChatGPT, Spotify, HboGO, KKTV, LiTV, LineTV, MyTvSuper, NowE, Bahamut, CatchPlay
+  streaming_service: Netflix, YouTube, Disney+, TikTok, Bilibili, VIU, TVB, PrimeVideo, DAZN, ChatGPT, Spotify, HboGO, KKTV, LiTV, LineTV, MyTvSuper, NowE, Bahamut, CatchPlay, NewHboMax
 
 - name: US
   password: <解锁项目的uuid>
