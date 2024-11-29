@@ -71,7 +71,7 @@ Nodes:
       ApiHost: "$API_HOST"
       ApiKey: "$API_KEY"
       NodeID: $NODE_ID
-      NodeType: "$NODE_TYPE"  # Node type: V2ray, Vmess, Vless, Shadowsocks, Trojan, Shadowsocks-Plugin
+      NodeType: $NODE_TYPE  # Node type: V2ray, Vmess, Vless, Shadowsocks, Trojan, Shadowsocks-Plugin
       Timeout: 30 # Timeout for the api request
       EnableVless: true # Enable Vless for V2ray Type
       SpeedLimit: 0 # Mbps, Local settings will replace remote settings, 0 means disable
