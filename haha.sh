@@ -34,6 +34,12 @@ PROXY_PROTOCOL=$7
 OPTIMIZE_CONNECTION=$8
 UNLOCK_SERVICES=$9
 
+if [ "$PROXY_PROTOCOL" == "y" ]; then
+    PROXY_PROTOCOL = "true"
+else
+    PROXY_PROTOCOL = "false"
+fi
+
 # 保存最近一次的参数到文件
 PARAM_FILE="/etc/xrayr-onecheck/last_params.txt"
 
@@ -85,7 +91,7 @@ Nodes:
       DeviceOnlineMinTraffic: $REPORT_THRESHOLD  # V2board面板设备数限制统计阈值，大于此流量时上报设备数在线，单位kB，不填则默认上报
       EnableDNS: false # Use custom DNS config, Please ensure that you set the dns.json well
       DNSType: AsIs # AsIs, UseIP, UseIPv4, UseIPv6, DNS strategy
-      EnableProxyProtocol: false # Only works for WebSocket and TCP
+      EnableProxyProtocol: $PROXY_PROTOCOL # Only works for WebSocket and TCP
       AutoSpeedLimitConfig:
         Limit: 0 # Warned speed. Set to 0 to disable AutoSpeedLimit (mbps)
         WarnTimes: 0 # After (WarnTimes) consecutive warnings, the user will be limited. Set to 0 to punish overspeed user immediately.
@@ -145,14 +151,7 @@ else
 fi
 
 
-if [ "$PROXY_PROTOCOL" == "y" ]; then
-    echo -e "${YELLOW}启用真实ip传递，更新配置...${NC}"
-    echo -e "${BLUE}PROXY_PROTOCOL: $PROXY_PROTOCOL"
-    sed -i "s|^EnableProxyProtocol: .*|EnableProxyProtocol: true # Only works for WebSocket and TCP|" /etc/XrayR/config.yml
-    grep "^EnableProxyProtocol:" /etc/XrayR/config.yml
-else
-    echo -e "${YELLOW}未启用传递真实ip配置${NC}"
-fi
+
 
 
 if [ "$OPTIMIZE_CONNECTION" == "y" ]; then
