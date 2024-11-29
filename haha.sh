@@ -147,7 +147,9 @@ fi
 
 if [ "$PROXY_PROTOCOL" == "y" ]; then
     echo -e "${YELLOW}启用真实ip传递，更新配置...${NC}"
+    echo -e "${BLUE}PROXY_PROTOCOL: $PROXY_PROTOCOL"
     sed -i "s|^EnableProxyProtocol: .*|EnableProxyProtocol: true # Only works for WebSocket and TCP|" /etc/XrayR/config.yml
+    grep "^EnableProxyProtocol:" /etc/XrayR/config.yml
 else
     echo -e "${YELLOW}未启用传递真实ip配置${NC}"
 fi
