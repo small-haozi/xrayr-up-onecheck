@@ -34,12 +34,6 @@ PROXY_PROTOCOL=$7
 OPTIMIZE_CONNECTION=$8
 UNLOCK_SERVICES=$9
 
-if [ "$PROXY_PROTOCOL" == "y" ]; then
-    PROXY_PROTOCOL="true"
-else
-    PROXY_PROTOCOL="false"
-fi
-
 # 保存最近一次的参数到文件
 PARAM_FILE="/etc/xrayr-onecheck/last_params.txt"
 
@@ -56,6 +50,13 @@ cp /etc/XrayR/config.yml /etc/XrayR/config.yml.bak
 
 # 更新 config.yml 文件内容
 echo -e "${BLUE}更新 config.yml 文件内容...${NC}"
+if [ "$PROXY_PROTOCOL" == "y" ]; then
+    echo -e "${YELLOW}启用真实ip传递，更新配置...${NC}"
+    PROXY_PROTOCOL="true"
+else
+    echo -e "${YELLOW}未启用真实ip传递，更新配置...${NC}"
+    PROXY_PROTOCOL="false"
+fi
 cat <<EOL > /etc/XrayR/config.yml
 Log:
   Level: warning # Log level: none, error, warning, info, debug
