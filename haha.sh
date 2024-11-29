@@ -35,9 +35,9 @@ OPTIMIZE_CONNECTION=$8
 UNLOCK_SERVICES=$9
 
 if [ "$PROXY_PROTOCOL" == "y" ]; then
-    PROXY_PROTOCOL = "true"
+    $PROXY_PROTOCOL = "true"
 else
-    PROXY_PROTOCOL = "false"
+    $PROXY_PROTOCOL = "false"
 fi
 
 # 保存最近一次的参数到文件
