@@ -64,7 +64,7 @@ fi
 # 检查是否安装了 XrayR
 if ! command -v xrayr &> /dev/null; then
     echo -e "${RED}XrayR 未安装，正在下载并安装 XrayR...${NC}"
-    wget -N --progress=bar https://raw.githubusercontent.com/wyx2685/XrayR-release/master/install.sh && bash install.sh
+    wget -N --progress=bar https://raw.githubusercontent.com/vlesstop/XrayR-release/master/install.sh && bash install.sh
 else
     echo -e "${GREEN}XrayR 已安装。${NC}"
 fi
